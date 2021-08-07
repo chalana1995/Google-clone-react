@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
+  Images: {
+    domains: ["cdn.vox-cdn.com"],
+  }
 }
