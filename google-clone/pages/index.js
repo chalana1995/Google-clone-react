@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import Avatar from '../components/Avatar';
-import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react/solid'
+import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react/solid';
+import { SearchIcon } from '@heroicons/react/outline';
 
 export default function Home() {
   return (
@@ -34,15 +35,22 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form>
+      <form className="flex flex-col items-center mt-44">
         <Image
-          src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg"
+          src="https://cdn.pixabay.com/photo/2015/11/02/14/01/google-1018443_960_720.png"
           height={100}
           width={300}
         />
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md
+        rounded-full border border-gray-500 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
+          <SearchIcon className="h-5 mr-3 text-gray-500" />
+          <input type="text" className="focus:outline-none flex-grow" />
+          <MicrophoneIcon className="h-5" />
+        </div>
       </form>
 
       {/* Footer */}
     </div>
   )
 }
+ 

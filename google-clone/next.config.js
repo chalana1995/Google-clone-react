@@ -1,5 +1,5 @@
 module.exports = {
-  Images: {
-    domains: ["cdn.vox-cdn.com"],
-  }
+  images: {
+    domains: ['cdn.pixabay.com'],
+  },
 }
