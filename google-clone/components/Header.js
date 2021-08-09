@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router'
 import { XIcon, MicrophoneIcon, SearchIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
 
@@ -42,6 +43,8 @@ function Header() {
                 </form>
                 <Avatar className="ml-auto" url="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" />
             </div>
+            {/* HeaderOption */}
+            <HeaderOptions />
         </header>
     )
 }
